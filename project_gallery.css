@@ -37,7 +37,7 @@ p {
 }
 
 img {
-    height: 416px;
+    height: 440px;
     max-width: 98%;
     display: block;
     object-fit: cover;
@@ -50,7 +50,7 @@ img {
     padding: 8px 8px 20px 16px;
     width: clamp(20rem, calc(20rem + 2vw), 22rem);
     overflow: hidden;
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.20);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.20);
     border-radius: 16px;
     background: #ECE9E6;
     background: linear-gradient(to right, #f3e5e5, #ECE9E6);
@@ -87,8 +87,19 @@ img {
     border-radius: 15px;
   }
 
-  #more {
+  .hide {
     display: none;
   }
 
-  
+  @media screen and (max-width: 768px) {
+    .container {
+    display: grid;
+    }
+  }
+
+  @media screen and (max-width: 405px) {
+    .card {
+      width: auto;
+    }
+  }
+
